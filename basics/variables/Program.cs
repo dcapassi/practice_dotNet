@@ -6,7 +6,7 @@ namespace variables
     {
         static void Main(string[] args)
         {
-            //Integer Primitives
+            // Value Types
 
             /* Byte - 8 bits */
             byte unsignedByte = 255;    // 0 to 255
@@ -30,7 +30,19 @@ namespace variables
             float floatPrimitive = (float)Math.Pow(10, 19); //1.5E−45 to 3.4E+38
 
             //Double - 64 bits (~15 decimal digits of precision)
-            double doublePrimitive = Math.Pow(10, 308); // 5.0E−324 to 1.7E+308    
+            double doublePrimitive = Math.Pow(10, 308); // 5.0E−324 to 1.7E+308
+
+            //Char - 16 bits
+            char charPrimitive = 'a'; // U+0000 to U+FFFF	
+
+            //Boolean - 8 bits
+            bool booleanTrue = true;
+            bool booleanFalse = false;
+            bool booleanTrueFromDecimal = Convert.ToBoolean(1);
+
+            //Reference type
+            //String
+            string referenceTypeString = " I'm a string";
 
         }
     }
