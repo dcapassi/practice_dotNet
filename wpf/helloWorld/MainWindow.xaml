@@ -1,0 +1,20 @@
+﻿<Window x:Class="helloWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:helloWorld"
+        mc:Ignorable="d"
+        Title="Hello World - Somar" Height="328.046" Width="600.525">
+	<Grid Margin="23,10,23.4,-0.6">
+		<Label Content="Insira o primeiro número:" HorizontalAlignment="Left" Margin="0,65,0,0" VerticalAlignment="Top"/>
+		<Label Content="Insira o segundo número:" HorizontalAlignment="Left" Margin="0,106,0,0" VerticalAlignment="Top"/>
+		<TextBox x:Name="textBoxPrimeiroNumero" HorizontalAlignment="Left" Height="23" Margin="149,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" Text="0"/>
+		<TextBox x:Name="textBoxSegundoNumero" HorizontalAlignment="Left" Height="23" Margin="151,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" Text="0"/>
+		<Button Content="Somar" HorizontalAlignment="Left" Margin="151,196,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+		<Button Content="Apagar" HorizontalAlignment="Left" Margin="246,196,0,0" VerticalAlignment="Top" Width="75" Click="Button_ClickApagar"/>
+		<Label	Content="Resultado:" HorizontalAlignment="Left" Margin="80,150,0,0" VerticalAlignment="Top"/>
+		<Label	x:Name="labelResultado" Content="" HorizontalAlignment="Left" Margin="151,150,0,0" VerticalAlignment="Top"/>
+		<Label Content="Somar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="84" FontSize="24"/>
+	</Grid>
+</Window>
