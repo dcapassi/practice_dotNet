@@ -9,7 +9,7 @@ namespace ChainOfResponsability
 
         public static void ClientCode(AbstractHandler handler)
         {
-            List<string> ipList = new List<string> { "ipv4/192.168.1.1", "ipv6/fe80::1", "ipv6/fe80::2", "ipv4/172.16.1.1", "ipv5/undefined" };
+            List<string> ipList = new List<string> { "IPv4/192.168.1.1/Up", "ipv6/fe80::1/Down", "ipv6/fe80::2/Up", "ipv4/172.16.1.1/Up", "ipv5/undefined/Down" };
 
             foreach (var ip in ipList)
             {

@@ -9,7 +9,7 @@ namespace ChainOfResponsability
         {
             if ((request.ToString()).Substring(0, 4) == "ipv4")
             {
-                return $"IPv4: {request.ToString().Substring(5)}";
+                return $"IPv4: {request.ToString().Split('/')[1]} status:{request.ToString().Split('/')[2]}";
             }
             else
             {
